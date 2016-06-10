@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="templateForLocalStores" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kls18-5b" translatesAutoresizingMaskIntoConstraints="NO" id="L7U-0j-T0k">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNg-V8-Dhl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="bZw-lY-IK5"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="L7U-0j-T0k" secondAttribute="trailing" constant="-20" id="0KE-8u-oqc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fNg-V8-Dhl" secondAttribute="trailing" constant="-20" id="3bT-ds-hz8"/>
+                            <constraint firstItem="fNg-V8-Dhl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Dkz-Gu-5mx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fNg-V8-Dhl" secondAttribute="bottom" id="Kjp-yS-OJT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L7U-0j-T0k" secondAttribute="bottom" id="PaC-hI-uM0"/>
+                            <constraint firstItem="L7U-0j-T0k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Qg9-tF-Ya0"/>
+                            <constraint firstItem="L7U-0j-T0k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SJH-GF-BTU"/>
+                            <constraint firstItem="fNg-V8-Dhl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="gZJ-Mb-d7C"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="backGroundImage" destination="L7U-0j-T0k" id="uHZ-wz-LNi"/>
+                        <outlet property="scrollView" destination="fNg-V8-Dhl" id="lGl-FP-g0J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="115" y="100"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kls18-5b" width="2000" height="2000"/>
+    </resources>
 </document>

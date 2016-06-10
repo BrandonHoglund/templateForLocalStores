@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductsViewController" customModule="templateForLocalStores" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="1ip-qh-9oZ" id="050-Sd-BfJ"/>
+                <outlet property="topTitleLabel" destination="1cl-Zr-VZ7" id="Hpl-eb-DwB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kls18-5b" translatesAutoresizingMaskIntoConstraints="NO" id="9hP-85-8w4">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cl-Zr-VZ7">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="GQy-xd-Ud2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Brands We Carry">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ip-qh-9oZ">
+                    <rect key="frame" x="0.0" y="525" width="600" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="ocM-G9-5EI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UhF-qo-RNa">
+                    <rect key="frame" x="0.0" y="72" width="600" height="457"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1cl-Zr-VZ7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5zY-QZ-FeZ"/>
+                <constraint firstAttribute="trailing" secondItem="9hP-85-8w4" secondAttribute="trailing" id="Cmp-cP-BIF"/>
+                <constraint firstItem="1cl-Zr-VZ7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FtG-m3-LpW"/>
+                <constraint firstAttribute="trailing" secondItem="1cl-Zr-VZ7" secondAttribute="trailing" id="KpO-ab-jRn"/>
+                <constraint firstItem="1ip-qh-9oZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Upz-RZ-vQE"/>
+                <constraint firstItem="9hP-85-8w4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c1u-Kv-CEs"/>
+                <constraint firstAttribute="trailing" secondItem="1ip-qh-9oZ" secondAttribute="trailing" id="rd3-ka-Swy"/>
+                <constraint firstAttribute="bottom" secondItem="1ip-qh-9oZ" secondAttribute="bottom" id="vG0-mj-SHu"/>
+                <constraint firstAttribute="bottom" secondItem="9hP-85-8w4" secondAttribute="bottom" id="w0i-Kq-qz4"/>
+                <constraint firstItem="9hP-85-8w4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zeT-XD-wss"/>
+            </constraints>
+            <point key="canvasLocation" x="318" y="243"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kls18-5b" width="2000" height="2000"/>
+    </resources>
+</document>
